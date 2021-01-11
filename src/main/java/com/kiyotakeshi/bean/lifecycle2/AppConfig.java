@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @ComponentScan
-public class ApplicationConfiguration {
+public class AppConfig {
 
     @Bean(initMethod = "initialization", destroyMethod = "destruction")
     public Bean1 springBean1() {

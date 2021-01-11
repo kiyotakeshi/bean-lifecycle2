@@ -5,7 +5,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 
 public class Runner {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
+        var context = new AnnotationConfigApplicationContext(AppConfig.class);
 
         Bean1 springBean1 = context.getBean(Bean1.class);
         springBean1.sayHello();
